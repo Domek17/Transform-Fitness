@@ -110,3 +110,8 @@ const imgObserver = new IntersectionObserver(loadImg, {
 });
 
 imgTargets.forEach((img) => imgObserver.observe(img));
+
+const newFeature = function () {
+  console.log("Welcome to the app");
+};
+newFeature();
