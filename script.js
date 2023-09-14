@@ -92,7 +92,7 @@ const loadImg = function (entries, observer) {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) return;
 
-    // Replace src with data-src
+    // Replacing src with data-src
     entry.target.src = entry.target.dataset.src;
 
     entry.target.addEventListener("load", function () {
@@ -110,8 +110,3 @@ const imgObserver = new IntersectionObserver(loadImg, {
 });
 
 imgTargets.forEach((img) => imgObserver.observe(img));
-
-const newFeature = function () {
-  console.log("Welcome to the app");
-};
-newFeature();
