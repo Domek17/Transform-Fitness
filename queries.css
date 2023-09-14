@@ -1,0 +1,252 @@
+/* ****************************** */
+/* BELLOW 1200PX (Landscape Tablets) */
+/* ****************************** */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* ****************************** */
+/* BELLOW 1020PX (Tablets) */
+/* ****************************** */
+
+@media (max-width: 63.75em) {
+  html {
+    font-size: 50%;
+  }
+
+  .section-features,
+  .section-team,
+  .section-gallery,
+  .section-pricing,
+  .footer {
+    padding: 6.4rem 0;
+  }
+
+  .features-header,
+  .team-header,
+  .gallery-header,
+  .pricing-heading {
+    margin: 0;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .gallery-header h3 {
+    margin-bottom: 3.4rem;
+  }
+
+  .gallery-img:hover {
+    width: 100%;
+    transform: scale(1.11);
+  }
+
+  .pricing-plan {
+    padding: 4.6rem;
+  }
+}
+
+/* ****************************** */
+/* BELLOW 856PX (Tablets) */
+/* ****************************** */
+@media (max-width: 53.5em) {
+  .section-features,
+  .section-team,
+  .section-gallery,
+  .section-pricing,
+  .footer {
+    padding: 4.8rem 0;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-grid {
+    grid-template-columns: 1.5fr 1.5fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-img:hover {
+    width: 100%;
+    transform: scale(1.08);
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1.5fr 1.5fr;
+  }
+
+  .plan-list li {
+    margin-left: 2rem;
+  }
+
+  .opening-hours-col {
+    margin-left: 1rem;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1000;
+  }
+
+  .main-nav {
+    background-color: rgb(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(30px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2.8rem;
+  }
+}
+
+/* ****************************** */
+/* BELLOW 600PX (Phones) */
+/* ****************************** */
+
+@media (max-width: 37.5em) {
+  .header {
+    padding: 0 4.8rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .name {
+    letter-spacing: 0;
+  }
+
+  .plan-list li {
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    row-gap: 5.4rem;
+  }
+
+  .address-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-col {
+    margin: 0;
+    text-align: center;
+  }
+
+  .opening-hours-col {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+/* ****************************** */
+/* BELLOW 500PX (Phones) */
+/* ****************************** */
+
+@media (max-width: 31.25em) {
+  .hero-content h1 {
+    font-size: 4.8rem;
+  }
+
+  .section-features,
+  .section-team,
+  .section-gallery,
+  .section-pricing {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-details {
+    padding: 3rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-img:hover {
+    width: 100%;
+    transform: scale(1.07);
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-plan {
+    margin: auto;
+  }
+}
