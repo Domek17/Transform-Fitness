@@ -554,7 +554,6 @@
 
 .footer-link:link,
 .footer-link:visited {
-  text-decoration: none;
   font-size: 1.4rem;
   color: #767676;
   transition: all 0.3s;
@@ -563,6 +562,18 @@
 .footer-link:hover,
 .footer-link:active {
   color: #333;
+}
+
+.address-link:link,
+.address-link:visited {
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.address-link:hover,
+.address-link:active {
+  color: #3742fa;
 }
 
 .opening-hours-col {
