@@ -36,6 +36,7 @@ Large: 1.6
 - Greys: 
 #ebecff
 #ddd
+#aaa
 #333
 #767676
 #999
@@ -46,6 +47,8 @@ Large: 1.6
 to bottom, rgb(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)
 to bottom, rgb(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)
 to bottom, rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)
+to bottom right, rgba(75, 84, 251), rgba(55, 65, 250, 0.9)
+45deg, rgb(75, 85, 251, 0.2), rgb(55, 66, 250, 0.2)
 
 - box-shadow:
 inset 0 0 0 0.2rem #3742fa
@@ -53,6 +56,8 @@ inset 0 0 0 0.1rem #2c35c8;
 0 0.2rem 3.2rem rgba(55, 66, 250, 0.5)
 box-shadow: 0 0 1rem 0.1rem rgb(0, 0, 0, 0.15)
 0 0.5rem 1rem 0.1rem rgb(0, 0, 0, 0.15)
+0 0.1rem 0.2rem rgba(255, 255, 255, 0.35)
+0 0 0 0.8rem rgba(135, 143, 252, 0.5)
 
 - text-shadow: 
 

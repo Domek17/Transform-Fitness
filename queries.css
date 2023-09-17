@@ -21,6 +21,7 @@
   .section-team,
   .section-gallery,
   .section-pricing,
+  .section-cta,
   .footer {
     padding: 6.4rem 0;
   }
@@ -63,6 +64,7 @@
   .section-team,
   .section-gallery,
   .section-pricing,
+  .section-cta,
   .footer {
     padding: 4.8rem 0;
   }
@@ -90,6 +92,22 @@
 
   .plan-list li {
     margin-left: 2rem;
+  }
+
+  .cta {
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  .cta-text-box {
+    padding: 4.8rem;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-cta {
+    width: 100%;
   }
 
   .opening-hours-col {
@@ -177,6 +195,16 @@
     line-height: 1.6;
   }
 
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 56rem;
+    background-position: top;
+    grid-row: 1;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr;
     row-gap: 5.4rem;
@@ -220,7 +248,8 @@
   .section-features,
   .section-team,
   .section-gallery,
-  .section-pricing {
+  .section-pricing,
+  .section-cta {
     padding-right: 2rem;
     padding-left: 2rem;
   }
@@ -248,5 +277,9 @@
 
   .pricing-plan {
     margin: auto;
+  }
+
+  .cta-img-box {
+    height: 36rem;
   }
 }
