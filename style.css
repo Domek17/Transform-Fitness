@@ -555,8 +555,7 @@
 }
 
 .btn-cta {
-  display: block;
-  margin: 6.8rem auto 0 auto;
+  margin-top: 3rem;
 }
 
 .cta-img-box {
@@ -696,4 +695,48 @@
   color: #767676;
   margin-top: 6.4rem;
   text-align: center;
+}
+
+/* ****************************** */
+/* SUBMIT */
+/* ****************************** */
+
+.submit-content {
+  height: 100vh;
+  padding: 2rem;
+  background: url(img/submit.jpg) no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 3.6rem;
+}
+
+.submit-text {
+  background: rgb(255, 255, 255, 0.9);
+  max-width: 100%;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.home-link:link,
+.home-link:visited {
+  font-size: 2rem;
+  font-weight: 600;
+  background: #3742fa;
+  border-radius: 10px;
+  padding: 1.3rem 2.6rem;
+  color: #fff;
+  transition: all 0.3s;
+  opacity: 0.85;
+}
+
+.home-link:hover,
+.home-link:active {
+  background: #fff;
+  color: #3742fa;
 }

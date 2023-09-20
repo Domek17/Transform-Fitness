@@ -648,7 +648,7 @@
                 </li>
               </ul>
               <div class="plan-sign-up">
-                <a href="#" class="btn">Start now</a>
+                <a href="#cta" class="btn">Start now</a>
               </div>
             </div>
 
@@ -696,7 +696,7 @@
                 </li>
               </ul>
               <div class="plan-sign-up">
-                <a href="#" class="btn btn-light">Start now</a>
+                <a href="#cta" class="btn btn-light">Start now</a>
               </div>
             </div>
 
@@ -729,7 +729,7 @@
                 </li>
               </ul>
               <div class="plan-sign-up">
-                <a href="#" class="btn">Start now</a>
+                <a href="#cta" class="btn">Start now</a>
               </div>
             </div>
           </div>
@@ -742,10 +742,11 @@
             <div class="cta-text-box">
               <h2 class="heading-secondary">Become a member of our team!</h2>
               <p class="cta-text">There is no better time than now</p>
-              <form action="#" class="cta-form">
+              <form action="submit.html" class="cta-form">
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
+                    class="login__input--fullname"
                     id="full-name"
                     type="text"
                     placeholder="John Smith"
@@ -756,6 +757,7 @@
                 <div>
                   <label for="email">Email address</label>
                   <input
+                    class="login__input--email"
                     id="email"
                     type="email"
                     placeholder="me@example.com"
@@ -766,6 +768,7 @@
                 <div>
                   <label for="phone-number">Phone Number</label>
                   <input
+                    class="login__input--phone"
                     id="phone-number"
                     type="tel"
                     placeholder="0913547879"
@@ -791,8 +794,10 @@
                     </option>
                   </select>
                 </div>
+                <button type="submit" class="btn btn-light btn-cta">
+                  Sign up now
+                </button>
               </form>
-              <button class="btn btn-light btn-cta">Sign up now</button>
             </div>
             <div
               class="cta-img-box"
